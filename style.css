@@ -1,0 +1,174 @@
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0;
+}
+
+body .loading {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .loading .lds-circle {
+  display: inline-block;
+  -webkit-transform: translateZ(1px);
+          transform: translateZ(1px);
+}
+
+body .loading .lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  background: black;
+  -webkit-animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+          animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@-webkit-keyframes lds-circle {
+  0%,
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+            animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(1800deg);
+            transform: rotateY(1800deg);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+            animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    -webkit-transform: rotateY(3600deg);
+            transform: rotateY(3600deg);
+  }
+}
+
+@keyframes lds-circle {
+  0%,
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+            animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(1800deg);
+            transform: rotateY(1800deg);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+            animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    -webkit-transform: rotateY(3600deg);
+            transform: rotateY(3600deg);
+  }
+}
+
+body .container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+body .container .mainbutton {
+  margin: auto;
+  width: 4rem;
+  height: 2rem;
+  padding: 1rem;
+  border: 3px solid black;
+  margin-top: 2rem;
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body .container .displaybox {
+  padding: 1rem 3rem;
+  padding-top: 2rem;
+  width: calc(100%-6rem);
+  margin-top: 3rem;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .displaybox .displayarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body .container .displaybox span {
+  border: 1px solid black;
+  padding: 0.8rem;
+}
+
+body .container .displaybox img {
+  width: 100%;
+}
+
+body .container .ticketshow {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+body .container .ticketshow img {
+  display: block;
+  width: 50%;
+  border: 1px solid black;
+  margin: auto;
+}
+
+body .container .ticketshow .imgarea {
+  position: relative;
+  margin: auto;
+}
+
+body .container .ticketshow .imgarea img {
+  border: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

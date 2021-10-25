@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="onload()">
+    <div class="loading" id="loading">
+      <div class="lds-circle"><div></div></div>
+      <div>加载中...</div>
+    </div>
+    <main class="container">
+      <div class="mainbutton" onclick="clickHandler()">
+        <span>点击生成</span>
+      </div>
+      <div class="ticketid"></div>
+      <div class="displaybox">
+        <div class="1pos displayarea">
+          <span>背景</span> <img src="null-sm.png" alt="" id="bg" />
+        </div>
+        <div class="2pos displayarea">
+          <span>身体</span><img src="null-sm.png" alt="" id="body" />
+        </div>
+        <div class="6pos displayarea">
+          <span>手臂</span><img src="null-sm.png" alt="" id="arm" />
+        </div>
+        <div class="3pos displayarea">
+          <span>脸部</span><img src="null-sm.png" alt="" id="face" />
+        </div>
+        <div class="4pos displayarea">
+          <span>食物</span><img src="null-sm.png" alt="" id="food" />
+        </div>
+        <div class="5pos displayarea">
+          <span>头发</span><img src="null-sm.png" alt="" id="hair" />
+        </div>
+      </div>
+      <div class="ticketshow">
+        <img src="ticket/1.png" id="ticketimg" alt="" />
+        <div class="imgarea" id="imgarea"></div>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.9.0/lodash.min.js"
+      integrity="sha512-0iCeIPM9ajKhqFvinM6o+J0hi/Slc21bjS9gPghWAn4dHO8kk1aX9n7c6pNdhsURkc0iC/6R58awhL1WU8NKmQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

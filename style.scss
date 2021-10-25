@@ -1,0 +1,109 @@
+body {
+  user-select: none;
+  margin: 0;
+  .loading {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // display:none;
+    .lds-circle {
+      display: inline-block;
+      transform: translateZ(1px);
+    }
+    .lds-circle > div {
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+      margin: 8px;
+      border-radius: 50%;
+      background: rgb(0, 0, 0);
+      animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    @keyframes lds-circle {
+      0%,
+      100% {
+        animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+      }
+      0% {
+        transform: rotateY(0deg);
+      }
+      50% {
+        transform: rotateY(1800deg);
+        animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+      }
+      100% {
+        transform: rotateY(3600deg);
+      }
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    .mainbutton {
+      margin: auto;
+      width: 4rem;
+      height: 2rem;
+      padding: 1rem;
+      border: 3px solid black;
+      margin-top: 2rem;
+      font-weight: bolder;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .displaybox {
+      padding: 1rem 3rem;
+      padding-top: 2rem;
+      width: calc(100%-6rem);
+      margin-top: 3rem;
+      border: 3px solid black;
+      display: flex;
+      justify-content: space-between;
+      .displayarea {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      span {
+        border: 1px solid black;
+        padding: 0.8rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .ticketshow {
+      margin-top: 4rem;
+      width: 100%;
+      img {
+        display: block;
+        width: 50%;
+        border: 1px solid black;
+        margin: auto;
+      }
+      .imgarea{
+        position: relative;
+        margin:auto;
+        // background-color: rgb(227, 227, 227);
+        // left: 35%;
+        img{
+          border: none;
+          width: 100%;
+          position: absolute;
+          top:0;
+          display: block;
+        }
+      }
+    }
+  }
+}
